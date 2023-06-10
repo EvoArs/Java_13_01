@@ -51,7 +51,8 @@ public class Ticket implements Comparable<Ticket> {
     public int hashCode() {
         return Objects.hash(from, to, price, timeFrom, timeTo);
     }
-// Реализация метода compareTo
+
+    // Реализация метода compareTo
     @Override
     public int compareTo(@NotNull Ticket o) {
         if (price < o.getPrice()) {

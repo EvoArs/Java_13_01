@@ -34,6 +34,7 @@ public class AviaSoulsTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testSortPriceNoValid() {
         Ticket[] expected = {};
@@ -51,6 +52,7 @@ public class AviaSoulsTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testSortComparator2() {
         Comparator<Ticket> comparator = new TicketTimeComparator();
